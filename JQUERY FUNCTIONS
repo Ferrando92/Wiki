@@ -1,0 +1,15 @@
+//This 2 functions make all your checkboxes have the same value, just need to have the same .class
+
+function check_all_true()
+		{				
+   			$(".checkboxclass").each(function(){
+				$(this).attr("checked",true);
+				});
+   		}
+		
+		function check_all_false()
+		{	
+			$(".checkboxclass").each(function(){
+				$(this).attr("checked",false);
+				});
+   		}
