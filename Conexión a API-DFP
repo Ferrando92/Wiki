@@ -1,16 +1,24 @@
+
 --Requisitos--
+
 Tener instalado CURL y SOAP
   - sudo apt-get install php-soap
   - sudo apt-get install php5-curl
 
+
+
 --Procedimientos--
+
 - Crear un usario en DFP "https://www.google.com/dfp/signin"
+
 - Entrar en la console de Google y crear un nuevo proyecto "https://console.developers.google.com/"
     -Crear proyecto
     -Activar la API de Doubleclick
     -Entrar en Credenciales
         -Crear un cliente OAuth como Aplicacion instalada
+        
 -Descargar libreria PHP de DFP "https://developers.google.com/doubleclick-publishers/docs/clients"
+
 -Ir al archivo Auth.ini y editar los siguientes parametros:
     -Network_code //Se encuentra en la misma url de el panel de DTF delante de el #
     -AplicationName //Nombre que quieras ponerle a la aplicacion
