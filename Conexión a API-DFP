@@ -4,8 +4,6 @@ Tener instalado CURL y SOAP
   - sudo apt-get install php-soap
   - sudo apt-get install php5-curl
 
-
-
 --Procedimientos--
 
 - Crear un usario en DFP "https://www.google.com/dfp/signin"
