@@ -1,4 +1,3 @@
-
 --Requisitos--
 
 Tener instalado CURL y SOAP
@@ -32,4 +31,4 @@ Tener instalado CURL y SOAP
     -Email //El mail de tu usario
     -Password //La contraseña de tu usuario
     
---Ya esta conectada tu aplicacion con la API de DFT
+--Ya esta conectada tu aplicacion con la API de DFP
