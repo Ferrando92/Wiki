@@ -1,0 +1,25 @@
+--Requisitos previos--
+-Tener una network en DFP
+-Tener activada la API en tu Usuario DFP en caso de no ser asi consultar mas abajo como realizar la activacvion
+
+--Como activar tu cuenta DFP para acceder de forma remota--
+  -Lo imprescindible a dia de hoy es tener el idioma del cliente en Ingles ya que la opcion que buscamos solo se encuentra en esta version.
+    -Seleccionar "configuracion del usuario, el cual se encuentra en el deplegable que surge al hacer click arriba a la derecho donde figura tu correo.
+    -Seleccionar English(US) como idioma de viualizacion.
+    -Hacer click en el boton "Guardar".
+  -Vamos a "Admin", el cual se encuentra arriba a la derecha
+  -Clickar en la opcion de la izquierda en "Api Access" para que nos salga el simbolo del "check" en verde
+  -Click en el boton de "Save" para guardar los cambios.
+Ya tienes la cuenta habilitada para poder acceder a ella mediante nuestra aplicacion, una vez realizado esto puedes volver a poner tu idioma en Español mediante los mismos pasos que seguimos para cambiarlo a Ingles.
+
+--Codigo para conectar usuario---
+<?php
+  require_once 'Google/Api/Ads/Dfp/Lib/DfpUser.php';
+  $email= "";
+  $pass = "";
+  $netcode= ""//IMPRESCINDIBLE, se encuentra en la url de DFP
+  $netname= "";//el parametro es necesario pero no tiene por que estar integro :S
+  $dempath= "Google/Api/Ads/Dfp/Lib/build.ini";
+  $user = new DfpUser($dempath, $email,$pass,$netname, $netcode, NULL,NULL, NULL);
+  $inventoryService = $user->GetService('InventoryService', 'v201311');
+?>
