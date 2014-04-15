@@ -1,6 +1,6 @@
 --Requisitos previos--
--Tener una network en DFP
--Tener activada la API en tu Usuario DFP en caso de no ser asi consultar mas abajo como realizar la activacvion
+  -Tener una network en DFP
+  -Tener activada la API en tu Usuario DFP en caso de no ser asi consultar mas abajo como realizar la activacvion
 
 --Como activar tu cuenta DFP para acceder de forma remota--
   -Lo imprescindible a dia de hoy es tener el idioma del cliente en Ingles ya que la opcion que buscamos solo se encuentra en esta version.
